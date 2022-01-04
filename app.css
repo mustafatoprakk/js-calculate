@@ -1,0 +1,60 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;  /* kenarlık yok */
+}
+
+html{
+  font-size: 30px;
+}
+
+body{
+  font-size: 1.2rem;
+}
+
+.calculator{
+  border-radius: 5px;
+  width: 400px;
+  position: absolute; /* tam ortalıyor */
+  top: 50%; 
+  left: 50%;
+  transform: translate(-50%,-50%); /**/
+  background-color: #F7F7F7;
+}
+
+.calculator-input{
+  font-size: 50px;
+  height: 140px;
+  border: none;
+  border-radius: 2px;
+  background-color: #1A374D;
+  color: #fff;
+  text-align: right;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.btn-number-color{
+  background-color: #334756;
+  color: #fff;
+}
+
+.operator{
+  background-color: #FF4C29;
+  color: #fff;
+  
+}
+
+.btn-equal{
+  grid-area: 2/4/6;  /* 2. satırın 4. sütunundan başla 6. satıra kadar git*/
+}
+
+.calculator-keys{
+  display: grid;
+  grid-template-columns: repeat(4,1fr); /* bir satırda 4 elaman ve 1fr eşit yer kaplayacak */
+  grid-gap: 10px;
+  padding: 10px;
+  padding-bottom: 20px;
+}
+
+
